@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Create Your Account</h2>
+        <form id="signupForm" novalidate>
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" required />
+                <div class="error" id="firstNameError">First name should not be empty</div>
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" required />
+                <div class="error" id="lastNameError">Last name should not be empty</div>
+            </div>
+            <div class="form-group">
+                <label>Email Id</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email Id" required />
+                <div class="error" id="emailError">Invalid Email Id</div>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required />
+                <div class="error" id="phoneError">Invalid Phone Number</div>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required />
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required />
+                <div class="error" id="passwordError">Passwords do not match</div>
+            </div>
+            <button class="btn" type="submit">Signup</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
